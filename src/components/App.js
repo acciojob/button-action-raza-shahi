@@ -10,7 +10,7 @@ const App = (props) => {
       <button id="click" onClick={() => setDisplay(!display)}>
         {display ? "Hide" : "Show"} Content
       </button>
-      {display && <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>}
+      <p className={display?"show":"hide"} id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>
     </div>
   );
 }
